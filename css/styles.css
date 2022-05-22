@@ -112,7 +112,7 @@ main p {
 .piedepagina {
     display: flex;
     grid-area: piedepagina;
-    background-color: #0000008c;
+    background-color: #716964;
 }
 
 .box__metodos__pago {
@@ -182,52 +182,55 @@ main p {
 /*pagina productos*/
 
 .container__grid__productos {
-    background-color: #f3caae69;
-    display: inline-grid;
+    background-color: #d8621383;
+    display: grid;
     grid-template-areas: "encabezado__productos"
         "galeria__productos"
         "footer__productos";
     grid-template-rows: repeat(3, 33.3%);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     gap: 20px;
-    flex-wrap: nowrap;
+}
+
+.encabezado__productos .navbar {
+    background-color: #716964
 }
 
 .encabezado__productos {
-
     grid-area: encabezado__productos;
 }
 
 .galeria__productos {
     background-color: #f3caae69;
-    grid-area: galeria__productos;
     grid-gap: 20px;
-    grid-auto-flow: column;
     display: flex;
     flex-flow: row wrap;
 }
 
 .galeria__items {
-    display: flex;
-    flex-flow: column wrap
+    grid-area: galeria__productos;
 }
 
 .galeria__img {
+    border: solid black;
+    border-width: 4px;
+    max-width: auto;
+    min-width: auto;
     width: 300px;
     height: 300px;
 }
 
 .footer__productos {
-    grid-area: footer__productos;
+    margin-top: 390px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-end;
-    align-items: flex-end;
-    height: 30vh;
-    width: 100%;
-    background-color: #737373;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    background-color: #716964;
 }
 
 .footer__productos p {
@@ -339,7 +342,7 @@ main p {
     justify-content: space-around;
     justify-items: center;
     align-items: center;
-    background-color: #737373;
+    background-color: #716964;
 }
 
 .footer__nosotros p {
@@ -406,7 +409,7 @@ main p {
     justify-content: space-around;
     justify-items: center;
     align-items: center;
-    background-color: #737373;
+    background-color: #716964;
 }
 
 .footer__sucursales p {
@@ -492,4 +495,55 @@ main p {
     .section__historia p {
         font-size: 1.5rem;
     }
+}
+
+/*pagina contacto*/
+
+/*Aqui se encuentra el gradiente*/
+.body__contacto {
+    background: rgb(241, 167, 98);
+    background: linear-gradient(220deg, rgba(241, 167, 98, 1) 11%, rgba(6, 11, 17, 1) 99%);
+}
+
+.body__contacto .navbar:hover {
+    background: rgba(0, 0, 0, 0.658);
+}
+
+.formulario__contacto:hover {
+
+    background: rgba(0, 0, 0, 0.658);
+}
+
+.formulario__contacto input {
+    width: 150px;
+    height: 30px;
+    transition: all 3s;
+}
+
+input:focus {
+    width: 180px;
+    height: 80px;
+    font-size: 20px;
+}
+
+.formulario__contacto {
+    display: flex;
+    justify-content: start;
+    align-content: flex-end;
+}
+
+.formulario__contacto fieldset {
+    border: solid rgb(255, 255, 255);
+    border-width: 3px;
+}
+
+.formulario__contacto legend {
+    font-size: 2rem;
+    color: white;
+}
+
+.formulario__contacto label {
+    font-size: 2rem;
+    color: white;
+
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astral Coffee</title>
+    <link rel="favicon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+</head>
+
+<body class="body__contacto">
+    <header class="encabezado">
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <img class="logo" src="../assets/logos/logo.png" type="image/png">
+            </ul>
+        </nav>
+    </header>
+    <div class="formulario__contacto">
+        <form action="validar.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Contactese con nosotros</legend>
+                <label for="">Ingrese sus datos</label>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Ingrese su Apellido">
+                <input type="email" placeholder="Ingrese su Mail">
+                <input type="text" placeholder="Ingrese su telefono">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+                <br>
+                <br>
+                <legend> Dejenos su mensaje:</legend>
+                <label class="required" for="Mensaje"><br></label></br>
+                <textarea id="Mensaje" class="input" name="Mensaje" rows="10" cols="50"></textarea>
+            </fieldset>
+            </main>
+    </div>
+</body>
+
+</html>
