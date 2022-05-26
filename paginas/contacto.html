@@ -7,12 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astral Coffee</title>
     <link rel="favicon" href="favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
 </head>
 
 <body class="body__contacto">
     <header class="encabezado">
-        <nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/logos/logo.png" alt="Logo" width="120px"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class=" d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--<nav>
             <ul class="navbar">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
@@ -21,26 +55,34 @@
                 <li><a href="contacto.html">Contacto</a></li>
                 <img class="logo" src="../assets/logos/logo.png" type="image/png">
             </ul>
-        </nav>
+        </nav> -->
     </header>
-    <div class="formulario__contacto">
-        <form action="validar.php" method="post" enctype="multipart/form-data">
-            <fieldset>
-                <legend>Contactese con nosotros</legend>
-                <label for="">Ingrese sus datos</label>
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Ingrese su Apellido">
-                <input type="email" placeholder="Ingrese su Mail">
-                <input type="text" placeholder="Ingrese su telefono">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
-                <br>
-                <br>
-                <legend> Dejenos su mensaje:</legend>
-                <label class="required" for="Mensaje"><br></label></br>
-                <textarea id="Mensaje" class="input" name="Mensaje" rows="10" cols="50"></textarea>
-            </fieldset>
-            </main>
+    <main class="form">
+        <div class="row g-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+            </div>
+        </div>
+        <form class="form-floating">
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="email"
+                value="juan@ejemplo.com">
+            <label for="floatingInputValue">Ingrese su Email</label>
+        </form>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Escribanos" id="floatingTextarea2"
+                style="height: 200px"></textarea>
+            <label for="floatingTextarea2">Deje su comentario</label>
+        </div>
+        <div class="col-12 formEnviar botones">
+            <button class="btn btn-dark" type="submit">Enviar</button>
+            <input class="btn btn-dark" type="reset" value="Limpiar">
+        </div>
+
+
+    </main>
     </div>
 </body>
 

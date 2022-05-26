@@ -32,38 +32,33 @@ body {
 }
 
 .navbar {
-    width: 100vw;
-    height: 15vh;
-    background-color: #0000008c;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     list-style: none;
-    padding-top: 40px
+    padding-top: 20px;
 }
 
 .navbar li a {
     color: rgba(255, 255, 255, 0.87);
-    display: block;
+    display: flex;
     text-decoration: none;
     text-transform: uppercase;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     font-weight: 600;
     padding: 25px;
 }
 
 nav img {
-    display: flex;
     border: 0, 3rem;
     border-style: solid;
     border-color: black;
-    height: 10vh;
-    width: 5vw;
     margin-bottom: 20px;
 }
 
+/*
 .titleimage {
     display: flex;
     margin-left: 30%;
@@ -73,6 +68,7 @@ nav img {
     align-items: center;
     border: none;
 }
+*/
 
 .descripcion {
     grid: descripcion;
@@ -94,19 +90,28 @@ main p {
 }
 
 .fotos {
+    background-color: #f3caae69;
     grid-area: fotos;
     display: flex;
-    flex-flow: row nowrap;
-    background-color: #f3caae69;
+    justify-content: center;
+    width: auto;
+    height: auto;
     gap: 10px;
 }
 
+.carousel {
+    width: 30%;
+    height: 10%;
+}
+
+/*
 .fotosmuestra {
     display: flex;
     justify-content: space-between;
     padding-top: 10vh;
     padding-right: 50%;
 }
+*/
 
 /* A partir de aquí le daremos estilo al footer y sus hijos*/
 .piedepagina {
@@ -262,6 +267,7 @@ main p {
 
 .encabezado__nosotros {
     min-width: auto;
+    background-color: #716964;
 }
 
 .main__nosotros {
@@ -369,6 +375,11 @@ main p {
     grid-row-gap: 50px;
     min-height: 100vh;
 
+}
+
+.encabezado__sucursales {
+
+    background-color: #716964;
 }
 
 .mapas__sucursales {
@@ -501,29 +512,20 @@ main p {
 
 /*Aqui se encuentra el gradiente*/
 .body__contacto {
-    background: rgb(241, 167, 98);
+    background: #f3caae69;
     background: linear-gradient(220deg, rgba(241, 167, 98, 1) 11%, rgba(6, 11, 17, 1) 99%);
 }
 
-.body__contacto .navbar:hover {
-    background: rgba(0, 0, 0, 0.658);
-}
-
-.formulario__contacto:hover {
-
-    background: rgba(0, 0, 0, 0.658);
-}
-
-.formulario__contacto input {
-    width: 150px;
-    height: 30px;
-    transition: all 3s;
-}
-
-input:focus {
-    width: 180px;
-    height: 80px;
+.form-check-input:focus {
+    width: 40px;
+    height: 40px;
     font-size: 20px;
+}
+
+.form-control {
+    width: 100%;
+    height: 100%;
+    font-size: 20px
 }
 
 .formulario__contacto {
@@ -546,4 +548,17 @@ input:focus {
     font-size: 2rem;
     color: white;
 
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form-control {
+    border: solid black 2px;
+
+}
+
+.form-floating {
+    margin-top: 50px;
 }
