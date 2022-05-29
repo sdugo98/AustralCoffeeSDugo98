@@ -562,3 +562,7 @@ main p {
 .form-floating {
     margin-top: 50px;
 }
+
+.container-fluid {
+    padding: 0%;
+}
